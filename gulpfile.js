@@ -2,6 +2,8 @@ const gulp        = require('gulp');
 const browserSync = require('browser-sync');
 const sass = require('gulp-sass');
 const rename = require("gulp-rename");
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
 
 // Static server
 gulp.task('server', function() {
@@ -19,6 +21,10 @@ gulp.task('styles', function() {
                 prefix: "",
                 suffix: ".min",
             }))
+            .pipe(autoprefixer({
+                cascade: false
+            }))
+            .pipe(cleanCSS({compatibility: 'ie8'}))
             .pipe(gulp.dest("src/css"))
             .pipe(browserSync.stream());
 });
