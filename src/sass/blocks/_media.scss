@@ -9,13 +9,44 @@
 @media (max-width: 767px) {
     .header {
         padding: 0 20px;
+        &__logo {
+            max-width: 150px;
+        }
+        &__phone {
+            font-size: 16px;
+        }
+        &__official {
+            font-size: 10px;
+            span {
+                font-size: 14px;
+            }
+        }
     }
     .promo__wrapper {
+        align-items: center;
         padding: 0 20px;
     }
+
+
 }
 @media (max-width: 575px) {
-    .header__logo {
-
+    .header {
+        min-height: 200px;
+        flex-direction: column;
+        &__logo {
+            max-width: 230px;
+        }
+        &__official {
+            font-size: 19px;
+            span {
+                font-size: 20px;
+            }
+        }
+        &__phone {
+            font-size: 20px;
+        }
+    }
+    .button {
+        width: 180px;
     }
 }
