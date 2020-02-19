@@ -1,17 +1,11 @@
 .advantages {
+    padding-top: 70px;
     min-height: 470px;
     &__wrapper {
         margin: 65px auto 0;
         max-width: 810px;
         display: flex;
         justify-content: space-between;
-    }
-    &__title {
-        margin-top: 70px;
-        color: $main-colordark;
-        font-size: 30px;
-        font-weight: 700;
-        text-align: center;
     }
     &__item {
         max-width: 240px;
