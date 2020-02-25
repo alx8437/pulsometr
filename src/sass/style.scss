@@ -3,10 +3,10 @@
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
-@import 'blocks/media';
 @import 'blocks/title';
 @import 'blocks/consultation.scss';
 @import 'blocks/forms.scss';
+@import 'blocks/media';
 
 
 * {
@@ -17,3 +17,4 @@
     max-width: 950px;
     margin: 0 auto;
 }
+
