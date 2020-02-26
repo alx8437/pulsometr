@@ -2,5 +2,26 @@
     margin: 0 auto;
     padding: 81px 0;
     width: 750px;
-    
+    &__inner {
+        position: relative;;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 50%;
+        left: -66px;
+        transform: translateY(-50%);
+        border: none;
+        background-color: #fff;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .slick-next {
+        right: -66px;
+        left: auto;
+    }
+
 }
