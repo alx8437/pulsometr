@@ -30,7 +30,7 @@ const slider = tns({
     controls: false,
     nav: false,
 
-  });
+});
 
 document.querySelector('.prev').addEventListener('click', function() {
     slider.goTo('prev');

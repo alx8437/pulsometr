@@ -1,0 +1,63 @@
+.catalog-item {
+    padding: 20px 20px 26px 20px;
+    width: 300px;
+    min-height: 440px;
+    border: 2px solid #e8e8e8;
+    &__img {
+        display: block; // Изначально img inline
+        margin: 0 auto;
+        max-width: 100%; // Если вставить картинку БОЛЬШЕГО размера - она сожмется под размер блока, в котором она
+        height: 200px;
+    }
+    &__subtitle {
+        margin-top: 20px;
+        color: #0d0d0d;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__descr {
+        margin-top: 16px;
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+    &__link {
+        margin-top: 17px;
+        display: block; //По умолчанию - inline элемент
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+        text-align: center;
+        &:hover {
+            color: $main-color; // Убираем ИЗМЕНЕНИЕ цвета при наведении курсора!
+        }
+    }
+    hr {
+        margin-top: 19px; //Для элемента hr ПРИНЯТО назначать margin в обе стороны.
+        margin-bottom: 21px;
+        // height: 1px; НЕ РАБОТАЕТ, так сама полоска создается свойством border, исправляем так:
+        border-bottom: none;
+        background-color: #e8e8e8;
+
+    }
+    &__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__old-price {
+		color: #555555;
+		font-size: 14px;
+		font-weight: 300;
+		text-decoration: line-through; // Перечеркнутый шрифт
+	}
+	&__price {
+		color: #050505;
+		font-size: 20px;
+		font-weight: 700;
+	}
+}

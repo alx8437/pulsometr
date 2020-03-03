@@ -1,0 +1,45 @@
+.catalog {
+    padding-bottom: 100px;
+    &__tabs {
+        margin-top: 70px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0; // Убираем стандартные отступы списка
+        padding-left: 0; 
+
+    }
+    &__tab {
+        width: 220px;
+        height: 50px;
+        border: 2px solid #d0d0d0;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        color: #6b6b6b;
+        line-height: 48px; //Для выравнивания текста в одну строчку по вертикали
+        transform: skewX(-25deg); // наклоняем блок по оси Х
+        margin: 0 5px; // S между табами 10px, но для роной центровки делаем 5px у каждого.
+        cursor: pointer;
+        transition: 0.5 all; // Чтобы анимация была плавная
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color; //Тень по Х вправо, по Y вниз, размытие, цвет (если задать отриц. зн. будет влево и вверх)
+            border: none;
+        }
+        div {
+            transform: skewX(25deg); // Создали отдельные div обертки для обратного наклона текста внутри 
+        }
+        &_active {
+            color: #fff;
+            background-color: $main-color;
+            border: none;
+
+        }
+    }
+    &__content {
+        margin-top: 60px;
+
+    }
+}
